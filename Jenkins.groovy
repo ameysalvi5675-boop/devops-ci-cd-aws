@@ -7,13 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/ameysalvi5675-boop/devops-ci-cd-aws.git'
-            }
-        }
-
-
         stage('Maven Build') {
             steps {
                 sh 'mvn clean package'
